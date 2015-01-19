@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "Branch.h"
 
 @interface AppDelegate ()
 
@@ -16,6 +17,20 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    Branch *branch = [Branch getInstance:@"84499351119855798"];
+    [branch initSessionWithLaunchOptions:launchOptions andRegisterDeepLinkHandler:^(NSDictionary *params, NSError *error) {
+        
+        NSString *f_name = [params objectForKey:@"f_name"];
+        NSString *l_name = [params objectForKey:@"l_name"];
+        NSString *user_id = [params objectForKey:@"user_id"];
+        
+        NSLog(@"First name: %@", f_name);
+        NSLog(@"Last name: %@", l_name);
+        NSLog(@"User ID: %@", user_id);
+        
+        [[Branch getInstance] setIdentity:user_id];
+    }];
     // Override point for customization after application launch.
     return YES;
 }
