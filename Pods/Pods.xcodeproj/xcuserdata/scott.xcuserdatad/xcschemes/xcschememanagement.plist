@@ -3,8 +3,50 @@
 <plist version="1.0">
 <dict>
 	<key>SchemeUserState</key>
-	<dict/>
+	<dict>
+		<key>Pods-BranchSDKTest-Branch.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-BranchSDKTest.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-BranchSDKTestTests-Branch.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-BranchSDKTestTests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
 	<key>SuppressBuildableAutocreation</key>
-	<dict/>
+	<dict>
+		<key>5BE200141936ACEE307E63D3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>62101C2C9446B828D39BF468</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DAF6D432BD9E607213028C02</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F56493C120EB20614286414D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
 </dict>
 </plist>

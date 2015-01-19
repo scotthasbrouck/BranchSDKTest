@@ -1,0 +1,5 @@
+#include "Pods-BranchSDKTest-Branch.xcconfig"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Build" "${PODS_ROOT}/Headers/Build/Branch" "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/Branch"
+OTHER_LDFLAGS = ${PODS_BRANCHSDKTEST_BRANCH_OTHER_LDFLAGS} -ObjC
+PODS_ROOT = ${SRCROOT}
