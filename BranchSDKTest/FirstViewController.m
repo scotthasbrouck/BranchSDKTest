@@ -75,7 +75,39 @@
 }
 
 //REFERRALS
+- (IBAction)createReferralCode:(id)sender {
+    [[Branch getInstance] getReferralCodeWithAmount:10
+        andCallback:^(NSDictionary *params, NSError *error) {
+            if (!error) {
+                NSString *referralCode = [params objectForKey:@"referral_code"];
+                NSLog(@"Referral code for 10 points: %@", referralCode);
+            }
+        }
+     ];
+}
 
+- (IBAction)validateReferralCode:(id)sender {
+    [[Branch getInstance] validateReferralCode:@"KNSWRG" andCallback:^(NSDictionary *params, NSError *error) {
+        if (!error) {
+            if ([@"KNSWRG" isEqualToString:[params objectForKey:@"referral_code"]]) {
+                NSLog(@"Valid");
+            } else {
+                NSLog(@"Invalid");
+            }
+        } else {
+            NSLog(@"Error in validating referral code: %@", error.localizedDescription);
+        }
+    }];
+}
 
+- (IBAction)applyCode:(id)sender {
+    [[Branch getInstance] applyReferralCode:@"KNSWRG" andCallback:^(NSDictionary *params, NSError *error) {
+        if (!error) {
+            NSLog(@"Code Applied, params: %@", params);
+        } else {
+            NSLog(@"Error in applying referral code: %@", error.localizedDescription);
+        }
+    }];
+}
 
 @end
