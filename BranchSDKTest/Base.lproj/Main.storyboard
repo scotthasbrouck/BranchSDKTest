@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--First-->
@@ -16,25 +17,111 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="First View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="KQZ-1w-vlD">
-                                <rect key="frame" x="221" y="279" width="157.5" height="41.5"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UNv-ZK-FWA">
+                                <rect key="frame" x="230" y="40" width="140" height="30"/>
+                                <state key="normal" title="Get Session Params">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="getSessionParams:" destination="9pv-A4-QxB" eventType="touchUpInside" id="Ggv-VG-s2r"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xrg-BQ-0Ts">
+                                <rect key="frame" x="237" y="100" width="126" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="126" id="dA7-17-olA"/>
+                                    <constraint firstAttribute="height" constant="30" id="lc9-wO-xgq"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="o2S-0O-BZo"/>
+                                    <constraint firstAttribute="width" constant="126" id="uko-5P-e8L"/>
+                                </constraints>
+                                <state key="normal" title="Get Install Params">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="getInstallParams:" destination="9pv-A4-QxB" eventType="touchUpInside" id="BLE-Wu-mz5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8pl-ew-Wli">
+                                <rect key="frame" x="232" y="170" width="137" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="8nd-iC-gqZ"/>
+                                    <constraint firstAttribute="width" constant="137" id="YBj-HF-YdD"/>
+                                </constraints>
+                                <state key="normal" title="Generate Deep Link">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="generateDeepLink:" destination="9pv-A4-QxB" eventType="touchUpInside" id="zwN-o6-vEb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0a9-Bh-5cK">
+                                <rect key="frame" x="221" y="240" width="156" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="156" id="0rN-uB-cKp"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="B6t-ky-05y"/>
+                                    <constraint firstAttribute="height" constant="30" id="G6E-JH-2XQ"/>
+                                    <constraint firstAttribute="width" constant="137" id="NkN-AN-sWB"/>
+                                </constraints>
+                                <state key="normal" title="Get Reward Balance">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="B6t-ky-05y"/>
+                                        <exclude reference="NkN-AN-sWB"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="getRewardBalance:" destination="9pv-A4-QxB" eventType="touchUpInside" id="ffH-OF-d0u"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="frU-eg-K0D">
+                                <rect key="frame" x="242" y="302" width="117" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="117" id="0Eh-JE-OLm"/>
+                                </constraints>
+                                <state key="normal" title="Redeem 5 points">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="redeemFivePoints:" destination="9pv-A4-QxB" eventType="touchUpInside" id="Iov-DD-Bn9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nzh-8u-VnU">
+                                <rect key="frame" x="241" y="362" width="117" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="117" id="6bO-Ku-YEh"/>
+                                    <constraint firstAttribute="width" constant="117" id="TJ2-I1-QCi"/>
+                                </constraints>
+                                <state key="normal" title="Credit History">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="getCreditHistory:" destination="9pv-A4-QxB" eventType="touchUpInside" id="pSq-WJ-yBp"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="centerX" secondItem="KQZ-1w-vlD" secondAttribute="centerX" id="6BV-lF-sBN"/>
-                            <constraint firstAttribute="centerY" secondItem="KQZ-1w-vlD" secondAttribute="centerY" id="exm-UA-ej4"/>
+                            <constraint firstAttribute="centerX" secondItem="0a9-Bh-5cK" secondAttribute="centerX" constant="1" id="24L-Ky-o8O"/>
+                            <constraint firstItem="nzh-8u-VnU" firstAttribute="top" secondItem="frU-eg-K0D" secondAttribute="bottom" constant="30" id="9AI-Xf-eqq"/>
+                            <constraint firstItem="8pl-ew-Wli" firstAttribute="top" secondItem="Xrg-BQ-0Ts" secondAttribute="bottom" constant="40" id="Avk-0r-vji"/>
+                            <constraint firstItem="Xrg-BQ-0Ts" firstAttribute="top" secondItem="UNv-ZK-FWA" secondAttribute="bottom" constant="30" id="GF9-Gi-qbR"/>
+                            <constraint firstAttribute="centerX" secondItem="frU-eg-K0D" secondAttribute="centerX" id="Pm4-G1-V2S"/>
+                            <constraint firstItem="0a9-Bh-5cK" firstAttribute="top" secondItem="8pl-ew-Wli" secondAttribute="bottom" constant="40" id="aQj-6N-QMw"/>
+                            <constraint firstAttribute="centerX" secondItem="8pl-ew-Wli" secondAttribute="centerX" id="bqd-X3-6Zg"/>
+                            <constraint firstAttribute="centerX" secondItem="UNv-ZK-FWA" secondAttribute="centerX" id="hQ9-6O-h53"/>
+                            <constraint firstAttribute="centerX" secondItem="nzh-8u-VnU" secondAttribute="centerX" id="i1x-bB-6dv"/>
+                            <constraint firstItem="UNv-ZK-FWA" firstAttribute="top" secondItem="tsR-hK-woN" secondAttribute="topMargin" constant="40" id="iSq-hj-TB0"/>
+                            <constraint firstItem="frU-eg-K0D" firstAttribute="top" secondItem="0a9-Bh-5cK" secondAttribute="bottom" constant="32" id="jx4-RT-cya"/>
+                            <constraint firstAttribute="centerX" secondItem="Xrg-BQ-0Ts" secondAttribute="centerX" id="x36-lS-1Ck"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="750" y="-320"/>
+            <point key="canvasLocation" x="767" y="-320"/>
         </scene>
         <!--Second-->
         <scene sceneID="wg7-f3-ORb">

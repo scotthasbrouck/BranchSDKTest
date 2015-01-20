@@ -31,6 +31,12 @@
         
         [[Branch getInstance] setIdentity:user_id];
     }];
+    
+    //set userid from install
+    NSDictionary *installParams = [[Branch getInstance] getFirstReferringParams];
+    NSString *user_id = [installParams objectForKey:@"user_id"];
+    [[Branch getInstance] setIdentity:user_id];
+    
     // Override point for customization after application launch.
     return YES;
 }
@@ -54,7 +60,10 @@
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application {
-    // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+    //test signout
+    
+    [[Branch getInstance] logout];
+    NSLog(@"Logged out");
 }
 
 @end

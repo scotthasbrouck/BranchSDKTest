@@ -10,6 +10,9 @@
 
 @interface FirstViewController : UIViewController
 
+- (IBAction)getSessionParams:(id)sender;
+- (IBAction)getInstallParams:(id)sender;
 
 @end
+
 
