@@ -1,0 +1,2 @@
+PODS_BRANCHSDKTEST_OVERSHAREKIT_FRAMEWORK_SEARCH_PATHS = "$(PODS_ROOT)/OvershareKit/Dependencies/GooglePlus-SDK" "$(PODS_ROOT)/OvershareKit/Dependencies/GooglePlus-SDK"
+PODS_BRANCHSDKTEST_OVERSHAREKIT_OTHER_LDFLAGS = -framework "AddressBook" -framework "CoreLocation" -framework "CoreMotion" -framework "GoogleOpenSource" -framework "GooglePlus" -framework "MediaPlayer" -framework "UIKit"

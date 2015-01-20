@@ -1,0 +1,1 @@
+PODS_BRANCHSDKTESTTESTS_POCKETAPI_OTHER_LDFLAGS = -framework "Foundation" -framework "Security"

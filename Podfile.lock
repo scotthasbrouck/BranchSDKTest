@@ -1,10 +1,19 @@
 PODS:
+  - ADNLogin (2.1.0)
   - Branch (0.3.96)
+  - OvershareKit (1.3.1):
+    - ADNLogin
+    - PocketAPI
+  - PocketAPI (1.0.3)
 
 DEPENDENCIES:
   - Branch
+  - OvershareKit
 
 SPEC CHECKSUMS:
+  ADNLogin: 3828c000fa246c7340b331ed5c336fca8dfe6a1d
   Branch: 105efe5123166a549cbe8074ac2d0f5975c6f1fb
+  OvershareKit: c63af3a78b59b245095d47b4b76dbd96d2a85dbc
+  PocketAPI: c83bd3fc1916d5acab274efeb90171ba1184265d
 
 COCOAPODS: 0.35.0

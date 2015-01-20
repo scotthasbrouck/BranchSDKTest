@@ -1,6 +1,7 @@
+FRAMEWORK_SEARCH_PATHS = "$(PODS_ROOT)/OvershareKit/Dependencies/GooglePlus-SDK" "$(PODS_ROOT)/OvershareKit/Dependencies/GooglePlus-SDK"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/Branch"
-OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/Branch"
-OTHER_LDFLAGS = -ObjC -l"Pods-BranchSDKTest-Branch" -framework "AdSupport" -framework "CoreTelephony"
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/ADNLogin" "${PODS_ROOT}/Headers/Public/Branch" "${PODS_ROOT}/Headers/Public/OvershareKit" "${PODS_ROOT}/Headers/Public/PocketAPI"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/ADNLogin" -isystem "${PODS_ROOT}/Headers/Public/Branch" -isystem "${PODS_ROOT}/Headers/Public/OvershareKit" -isystem "${PODS_ROOT}/Headers/Public/PocketAPI"
+OTHER_LDFLAGS = -ObjC -l"Pods-BranchSDKTest-ADNLogin" -l"Pods-BranchSDKTest-Branch" -l"Pods-BranchSDKTest-OvershareKit" -l"Pods-BranchSDKTest-PocketAPI" -framework "AdSupport" -framework "AddressBook" -framework "CoreLocation" -framework "CoreMotion" -framework "CoreTelephony" -framework "Foundation" -framework "GoogleOpenSource" -framework "GooglePlus" -framework "MediaPlayer" -framework "Security" -framework "StoreKit" -framework "UIKit"
 OTHER_LIBTOOLFLAGS = $(OTHER_LDFLAGS)
 PODS_ROOT = ${SRCROOT}/Pods

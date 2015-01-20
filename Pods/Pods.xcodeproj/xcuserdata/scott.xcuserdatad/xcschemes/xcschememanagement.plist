@@ -4,7 +4,22 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Pods-BranchSDKTest-ADNLogin.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-BranchSDKTest-Branch.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-BranchSDKTest-OvershareKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-BranchSDKTest-PocketAPI.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -14,7 +29,22 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-BranchSDKTestTests-ADNLogin.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-BranchSDKTestTests-Branch.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-BranchSDKTestTests-OvershareKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-BranchSDKTestTests-PocketAPI.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -27,22 +57,52 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>5BE200141936ACEE307E63D3</key>
+		<key>0E58094878B5DA213A88B3D5</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>62101C2C9446B828D39BF468</key>
+		<key>14431301460419C7A8400900</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>DAF6D432BD9E607213028C02</key>
+		<key>4385BF28DB7CDCA7A19E7876</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F56493C120EB20614286414D</key>
+		<key>746E06A8DB7092DE3A1A6CA9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7E3F67C66A6B3B94BECB7C3A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8A5312E5A5A82C6F889769F3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A18E7088C75BD0BFCF96F8A4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>ACECFB5317082320BC029B9E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C7899671B14362631E46CB41</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FEA532E4A52F12D3C353E1ED</key>
 		<dict>
 			<key>primary</key>
 			<true/>
